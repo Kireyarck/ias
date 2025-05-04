@@ -21,7 +21,7 @@ if op == "1":
     os.system("conda activate AudioX")
     os.system("pip install git+https://github.com/ZeyueT/AudioX.git")
     os.system("conda install -c conda-forge ffmpeg libsndfile")
-    os.system('python3 AudioX/run_gradio.py --model-config model/config.json -share')
+    os.system('python3 AudioX/run_gradio.py --model-config model/config.json --share')
 
 if op == "2":
     os.system("conda create --name tortoise python=3.9 numba inflect" )
