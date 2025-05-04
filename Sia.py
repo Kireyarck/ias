@@ -17,9 +17,10 @@ try:
 except:
     op = input('Opção invalida, digite novamente: ')
 
-print(op)
+
 
 if op == 1:
+    print(op)
     os.system("git clone https://github.com/Kireyarck/AudioX.git" )
     os.system("conda create -n AudioX python=3.8.20")
     os.system("conda activate AudioX")
