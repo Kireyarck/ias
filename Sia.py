@@ -16,7 +16,8 @@ try:
     int(op)
 except:
     op = input('Opção invalida, digite novamente: ')
-    
+
+print(op)
 
 if op == 1:
     os.system("git clone https://github.com/Kireyarck/AudioX.git" )
