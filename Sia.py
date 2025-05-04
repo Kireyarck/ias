@@ -15,7 +15,7 @@ except:
 
 
 
-if op == 1:
+if op == "1":
     os.system("git clone https://github.com/Kireyarck/AudioX.git" )
     os.system("conda create -n AudioX python=3.8.20")
     os.system("conda activate AudioX")
@@ -23,7 +23,7 @@ if op == 1:
     os.system("conda install -c conda-forge ffmpeg libsndfile")
     os.system('python3 AudioX/run_gradio.py --model-config model/config.json -share')
 
-if op == 2:
+if op == "2":
     os.system("conda create --name tortoise python=3.9 numba inflect" )
     os.system("conda activate tortoise")
     os.system("conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvidia")
