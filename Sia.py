@@ -10,9 +10,13 @@ print(' 1 - AudioX (Sonorizador) \n2 - tortoise-tts (Gerador de voz) \n 2 - TTS 
 op = input('Escolha uma opção: ')
 
 
-while op != int or op > 4:
+    
+    
+try:
+    int(op)
+except:
     op = input('Opção invalida, digite novamente: ')
-
+    
 
 if op == 1:
     os.system("git clone https://github.com/Kireyarck/AudioX.git" )
