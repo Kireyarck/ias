@@ -10,7 +10,7 @@ print(' 1 - AudioX (Sonorizador) \n2 - tortoise-tts (Gerador de voz) \n 2 - TTS 
 op = input('Escolha uma opção: ')
 
 
-while op != int | op > 4:
+while op != int or op > 4:
     op = input('Opção invalida, digite novamente: ')
 
 
