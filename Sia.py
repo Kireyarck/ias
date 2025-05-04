@@ -15,10 +15,10 @@ except:
 
 
 
-
-os.system("git clone https://github.com/Kireyarck/AudioX.git" )
-os.system("conda create -n AudioX python=3.8.20")
-os.system("conda activate AudioX")
-os.system("pip install git+https://github.com/ZeyueT/AudioX.git")
-os.system("conda install -c conda-forge ffmpeg libsndfile")
-os.system('python3 run_gradio.py --model-config model/config.json -share')
+if op == 1:
+    os.system("git clone https://github.com/Kireyarck/AudioX.git" )
+    os.system("conda create -n AudioX python=3.8.20")
+    os.system("conda activate AudioX")
+    os.system("pip install git+https://github.com/ZeyueT/AudioX.git")
+    os.system("conda install -c conda-forge ffmpeg libsndfile")
+    os.system('python3 AudioX/run_gradio.py --model-config model/config.json -share')
