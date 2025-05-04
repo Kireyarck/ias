@@ -22,3 +22,12 @@ if op == 1:
     os.system("pip install git+https://github.com/ZeyueT/AudioX.git")
     os.system("conda install -c conda-forge ffmpeg libsndfile")
     os.system('python3 AudioX/run_gradio.py --model-config model/config.json -share')
+
+if op == 2:
+    os.system("conda create --name tortoise python=3.9 numba inflect" )
+    os.system("conda activate tortoise")
+    os.system("conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvidia")
+    os.system("conda install transformers=4.29.2")
+    os.system("git clone https://github.com/neonbjb/tortoise-tts.git")
+    os.system('python3 tortoise-tts/setup.py install')
+    
